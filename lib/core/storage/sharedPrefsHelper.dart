@@ -1,29 +1,29 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SharedPrefsHelper
-{
+class SharedPrefsHelper {
   final SharedPreferences _prefs;
   SharedPrefsHelper(this._prefs);
 
-  // Factory to initialize the helper asynchronously
   static Future<SharedPrefsHelper> init() async {
     final prefs = await SharedPreferences.getInstance();
     return SharedPrefsHelper(prefs);
   }
 
   // Keys
-  static const String _isLoggedInKey = 'isLoggedIn';
-  static const String _isOnboardingCompletedKey = 'isOnboardingCompleted';
+  // static const String _isOnboardingCompletedKey = 'isOnboardingCompleted';
+  static const String _phoneNumberKey = 'phoneNumber';
 
-  // Methods
-  Future<void> setLoggedIn(bool value) async =>
-      await _prefs.setBool(_isLoggedInKey, value);
 
-  bool get isLoggedIn => _prefs.getBool(_isLoggedInKey) ?? false;
+  // Onboarding (optional, keep commented out)
+  // Future<void> setOnboardingCompleted(bool value) async =>
+  //     await _prefs.setBool(_isOnboardingCompletedKey, value);
 
-  Future<void> setOnboardingCompleted(bool value) async =>
-      await _prefs.setBool(_isOnboardingCompletedKey, value);
+  // bool get isOnboardingCompleted =>
+  //     _prefs.getBool(_isOnboardingCompletedKey) ?? false;
 
-  bool get isOnboardingCompleted =>
-      _prefs.getBool(_isOnboardingCompletedKey) ?? false;
+  // Phone number
+  Future<void> setPhoneNumber(String phone) async =>
+      await _prefs.setString(_phoneNumberKey, phone);
+
+  String? get phoneNumber => _prefs.getString(_phoneNumberKey);
 }

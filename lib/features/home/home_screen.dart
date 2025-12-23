@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: AppUiConstants.bottomNavItems[_selectedIndex].page,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColors.globalDarkMode, // <-- Use your custom color
+        backgroundColor: AppColors.globalDarkMode,
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: AppColors.greenIcon,

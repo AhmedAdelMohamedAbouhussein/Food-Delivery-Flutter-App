@@ -1,4 +1,5 @@
 import 'package:final_proj/features/home/add_card.dart';
+import 'package:final_proj/features/home/cart_screen.dart';
 import 'package:final_proj/features/home/home_content.dart';
 import 'package:final_proj/features/home/search_screen.dart';
 
@@ -14,7 +15,7 @@ class AppUiConstants {
   static List<NavItem> bottomNavItems = [
     NavItem(icon: Icons.home, label: 'Home', page: const HomeContent()),
     NavItem(icon: Icons.search, label: 'Browse', page: const SearchScreen()),
-    NavItem(icon: Icons.bookmark, label: 'Orders', page: const AddCard()),
-    NavItem(icon: Icons.person, label: 'Profile', page: ProfileScreen()),
+    NavItem(icon: Icons.shopping_bag, label: 'Orders', page: const CartScreen()),
+    NavItem(icon: Icons.person, label: 'Profile', page: const ProfileScreen()),
   ];
 }
