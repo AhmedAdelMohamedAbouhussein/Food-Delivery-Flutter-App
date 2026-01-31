@@ -4,7 +4,7 @@
 A full-featured **food delivery application** built with **Flutter** that allows users to browse restaurants, view menus, add items to cart, and complete orders with multiple payment options. The app features a modern dark theme UI and follows clean architecture principles.
 
 <div style="text-align: center;">
-  <img src="Assets/Figma/image1.png"/>
+  <img src="assets/Figma/image1.png"/>
 </div>
 
 ---
@@ -168,10 +168,10 @@ flutter run
 **Screens:**
 
 <div style="text-align: center;">
-  <img src="Assets/FigMA/image2.png"/>
-  <img src="Assets/FigMA/image3.png"/>
-  <img src="Assets/FigMA/image4.png"/>
-  <img src="Assets/FigMA/image5.png"/>
+  <img src="assets/Figma/image2.png"/>
+  <img src="assets/Figma/image3.png"/>
+  <img src="assets/Figma/image4.png"/>
+  <img src="assets/Figma/image5.png"/>
 </div>
 
 
