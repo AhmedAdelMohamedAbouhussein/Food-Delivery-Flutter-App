@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget
     }
     void _init(BuildContext context)
     {
-        Timer(Duration(seconds: 1),()
+        Timer(Duration(seconds: 3),()
         {
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SigninScreen()),
           );

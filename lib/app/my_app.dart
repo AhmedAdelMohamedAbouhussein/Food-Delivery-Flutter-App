@@ -1,11 +1,11 @@
 import 'package:final_proj/features/home/homeLogic/home_cubit.dart';
 import 'package:final_proj/features/home/paymentLogic/payment_cubit.dart';
+import 'package:final_proj/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:final_proj/core/resources/app_colors.dart';
 import 'package:final_proj/core/resources/app_router.dart';
 import 'package:final_proj/core/storage/sharedPrefsHelper.dart';
-import 'package:final_proj/features/home/home_screen.dart';
 import 'package:final_proj/features/home/signin_screen.dart';
 
 class MyApp extends StatefulWidget {
@@ -29,9 +29,9 @@ class _MyAppState extends State<MyApp> {
   Future<void> _checkPhoneNumber() async {
     _prefsHelper = await SharedPrefsHelper.init();
     if (_prefsHelper!.phoneNumber != null && _prefsHelper!.phoneNumber!.isNotEmpty) {
-      _initialScreen = const HomeScreen();
+      _initialScreen = const SplashScreen();
     } else {
-      _initialScreen = const SigninScreen();
+      _initialScreen = const SplashScreen();
     }
     setState(() => _loading = false);
   }

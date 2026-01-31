@@ -57,8 +57,6 @@ class AppValidator {
       return "Use MM/YY";
     }
 
-
-
     return null;
   }
 }

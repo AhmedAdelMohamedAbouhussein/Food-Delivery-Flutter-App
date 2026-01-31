@@ -87,7 +87,7 @@ class _AddCardState extends State<AddCard> {
                   ),
                   const SizedBox(height: 20),
 
-                  // Row: Exp & CVV
+
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

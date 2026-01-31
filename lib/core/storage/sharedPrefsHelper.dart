@@ -14,13 +14,6 @@ class SharedPrefsHelper {
   static const String _phoneNumberKey = 'phoneNumber';
 
 
-  // Onboarding (optional, keep commented out)
-  // Future<void> setOnboardingCompleted(bool value) async =>
-  //     await _prefs.setBool(_isOnboardingCompletedKey, value);
-
-  // bool get isOnboardingCompleted =>
-  //     _prefs.getBool(_isOnboardingCompletedKey) ?? false;
-
   // Phone number
   Future<void> setPhoneNumber(String phone) async =>
       await _prefs.setString(_phoneNumberKey, phone);
